@@ -1,0 +1,234 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Grayish-blue);
+}
+
+.container {
+    width: 75rem;
+    height: 55rem;
+    background-color: var(--Off-white);
+}
+
+/* Menu */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1rem 6rem 0 4rem;
+    height: 9rem;
+}
+
+.cabecalho .logo {
+    background: url(../images/logo.svg) center center no-repeat;
+    background-size: 4rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.cabecalho .navegacao-cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cabecalho .navegacao-cabecalho ul {
+    display: flex;
+}
+
+.cabecalho .navegacao-cabecalho ul li a {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.cabecalho .navegacao-cabecalho ul li a:hover {
+    color: var(--Soft-orange);
+}
+
+
+/* Conteúdo */
+
+.conteudo-principal {
+    display: grid;
+    grid: "imagem-principal imagem-principal noticias" 12.5rem "imagem-principal imagem-principal noticias" 4rem "titulo paragrafo noticias" 11rem/ 18rem 23rem auto;
+    grid-gap: 1rem 3rem;
+    margin: 0 6rem 0 6rem;
+}
+
+.imagens-principal {
+    position: relative;
+    grid-area: imagem-principal;
+}
+
+.imagem {
+    height: 18rem;
+    width: 45rem;
+    position: absolute;
+    display: none;
+}
+
+.imagens-principal .primeira-imagem {
+    background: url(../images/istockphoto-1334436084-612x612.jpg) center no-repeat;
+}
+
+.imagens-principal .segunda-imagem {
+    background: url(../images/istockphoto-1339094198-612x612.jpg) center no-repeat;
+}
+
+.imagens-principal .terceira-imagem {
+    background: url(../images/istockphoto-1390792827-612x612.jpg) center no-repeat;
+}
+
+.mostrar {
+    display: block;
+}
+
+.imagens-principal .seta-voltar {
+    transform: rotateY(180deg);
+    left: 1rem;
+}
+
+.imagens-principal .seta-avancar {
+    right: 0;
+}
+
+.seta {
+    background: url(../images/seta.png) center center no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background-size: cover;
+}
+.container-noticias {
+    grid-area: noticias;
+    background-color: var(--Very-dark-blue);
+    height: 29rem;
+    width: 20rem;
+}
+
+.container-noticias .titulo-container-noticias {
+    color: var(--Soft-orange);
+    font-weight: 800;
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    padding: 1.3rem 0 0 1.3rem;
+}
+
+.noticias {
+    padding: 1rem 0 0 1.3rem;
+}
+
+.noticias .titulo-noticia {
+    color: var(--Off-white);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.noticias .titulo-noticia:hover {
+    color: rgba(121, 96, 147, 0.788);
+}
+
+.noticias .paragrafo-noticias {
+    display: none;
+}
+.noticias .paragrafo-no {
+    color: var(--Grayish-blue);
+    margin: 0 0 1.5rem 0;
+}
+.mostrar-noticia .paragrafo-noticias{
+    display: block;
+}
+
+hr {
+    margin: 0 1.3rem 1.5rem 0;
+    border-color: var(--Grayish-blue);
+
+}
+
+
+.titulo-materia {
+    grid-area: titulo;
+}
+
+.titulo-materia h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    width: 15.5rem;
+}
+
+.paragrafo-materia {
+    grid-area: paragrafo;
+}
+
+.botao-ler-mais {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.botao-ler-mais .botao {
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    margin-top: 4rem;
+}
+
+footer .noticias-extras {
+    display: flex;
+    margin-left: 6rem;
+}
+
+.noticias-rodape {
+    display: flex;
+}
+
+.informacoes {
+    margin-left: 0.5rem;
+}
+
+.imagem-rodape {
+    height: 7rem;
+    width: 5rem;
+}
+
+.primeira-imagem-rodape {
+    background: url(../images/image-retro-pcs.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.segunda-imagem-rodape {
+    background: url(../images/image-top-laptops.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.tereceira-imagem-rodape {
+    background: url(../images/image-gaming-growth.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.numero-da-noticia {
+    font-size: 1.5rem;
+    color: var(--Grayish-blue);
+}
+
+.titulo-rodape {
+    margin: 0.5rem 0;
+}
+
+.paragrafo-rodape {
+    width: 15rem;
+    line-height: 1.3rem;
+}
